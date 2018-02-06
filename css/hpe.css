@@ -1,27 +1,14 @@
-/*!
- * Start Bootstrap - Agency v3.3.7+1 (http://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
- body
- {
-  overflow-x: hidden;
-  font-family: "Metric Light", Arial, sans-serif;
+body{
+    overflow-x: hidden;
+    font-family: "Metric Light", Arial, sans-serif;
 }
-
-.text-muted
-{
+.text-muted{
   color: #777777;
 }
-
-.text-primary
-{
+.text-primary{
   color: #01A982;
 }
-
-p
-{
-
+p{
   font-size: 18px;
   line-height: 20px;
 }
@@ -35,7 +22,7 @@ a:active,
 a.active {
   outline: none;
 }
-a {
+a{
   color: #01A982;
 }
 a:hover,
@@ -186,7 +173,7 @@ fieldset[disabled] .btn-xl.active {
   font-weight: 400;
   letter-spacing: 1px;
   color: rgba(255,255,255,.6);
-  margin-top: 25px !important;
+  /*margin-top: 25px !important;*/
 
 }
 .navbar-custom .nav li a:hover,
@@ -207,7 +194,7 @@ fieldset[disabled] .btn-xl.active {
 @media (min-width: 768px) {
   .navbar-custom {
     background-color: #425563;
-    padding: 0px 0px 30px 0px;
+    padding: 20px;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
@@ -218,18 +205,12 @@ fieldset[disabled] .btn-xl.active {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+    padding: 0;
+    display: flex;
+    align-items: center;
   }
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 3px;
-  }
-}
-@media (min-width: 768px) {
-  .navbar-custom.affix {
-    background-color: #425563;
-    padding: 0px 0px 30px 0px;
-  }
-  .navbar-custom.affix .navbar-brand {
-    font-size: 1.5em;
   }
 }
 header {
@@ -243,10 +224,37 @@ header {
   -o-background-size: cover;
   text-align: center;
   color: white;
+  height: 100vh;
+}
+header:BEFORE{
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  opacity: .5;
+  z-index: 0;
+  background: #000;
+  width: 100%;
+  height: 100%;
 }
 header .intro-text {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+header .intro-text a{
+  background-color: #01A982 !important;
+  color: #FFFFFF;
+  text-transform: initial;
+  text-decoration: none;
+  font-family: "Metric SemiBold", Arial, sans-serif;
+  font-size: 18px;
 }
 header .intro-text .intro-lead-in {
   font-family: "Metric SemiBold", Arial, sans-serif;
@@ -262,10 +270,6 @@ header .intro-text .intro-heading {
   margin-bottom: 25px;
 }
 @media (min-width: 768px) {
-  header .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
-  }
   header .intro-text .intro-lead-in {
     font-family: "Metric SemiBold", Arial, sans-serif;
     font-size: 40px;
@@ -751,15 +755,15 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #01A982;
 }
-
-
-/*-----CUSTOM-----*/
-
 .img-responsive-logo
 {
   max-height: 50px;
   padding-top: 0px;
-  margin-top: 10px;
+  -webkit-transition: max-height.3s linear;
+  -moz-transition: max-height .3s linear;
+  -ms-transition: max-height .3s linear;
+  -o-transition: max-height .3s linear;
+  transition: max-height .3s linear;
 }
 
 @media (max-width: 762px)
@@ -779,4 +783,25 @@ h2.colordeco
   font-weight: 400;
 	padding: 0px;
 	margin: 0px;
+}
+
+@media (min-width: 768px){
+.navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    -webkit-transition: font-size .3s linear;
+    -moz-transition: font-size .3s linear;
+    -ms-transition: font-size .3s linear;
+    -o-transition: font-size .3s linear;
+    transition: font-size .3s linear;
+}
+.navbarcolor .navbar-nav>li>a{
+  font-size: 16px;
+}
+.navbarcolor.navbar-custom{
+  padding: 10px;
+}
+.navbarcolor .img-responsive-logo{
+  max-height: 35px;
 }
