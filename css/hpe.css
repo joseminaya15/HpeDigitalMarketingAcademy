@@ -180,6 +180,8 @@ section .section-subheading p{
 .service-heading {
   margin: 15px 0;
   text-transform: none;
+  margin: 20px 0 0 0;
+  line-height: 1;
 }
 #portfolio * {
   z-index: 2;
