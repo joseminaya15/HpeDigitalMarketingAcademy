@@ -98,7 +98,7 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 header {
-  background-image: url('../img/header-bg.jpg');
+  background-image: url('../img/header-bg.png');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -181,63 +181,6 @@ section .section-subheading p{
   margin: 15px 0;
   text-transform: none;
 }
-#portfolio .portfolio-item {
-  margin: 0 0 15px;
-  right: 0;
-}
-#portfolio .portfolio-item .portfolio-link {
-  display: block;
-  position: relative;
-  max-width: 400px;
-  margin: 0 auto;
-}
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  background: #425563;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: all ease 0.5s;
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-}
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-  opacity: 1;
-}
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-  position: absolute;
-  width: 100%;
-  height: 20px;
-  font-size: 20px;
-  text-align: center;
-  top: 50%;
-  margin-top: -12px;
-  color: white;
-}
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
-  margin-top: -12px;
-}
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
-  margin: 0;
-}
-#portfolio .portfolio-item .portfolio-caption {
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: white;
-  text-align: center;
-  padding: 25px;
-}
-#portfolio .portfolio-item .portfolio-caption h4 {
-  text-transform: none;
-  margin: 0;
-}
-#portfolio .portfolio-item .portfolio-caption p {
-  font-family: "Metric Light", Arial, sans-serif;
-  font-style: italic;
-  font-size: 16px;
-  margin: 0;
-}
 #portfolio * {
   z-index: 2;
 }
@@ -247,27 +190,6 @@ section .section-subheading p{
 }
 #portfolio .col-md-3{
   height: 182px;
-}
-@media (min-width: 767px) {
-  #portfolio .portfolio-item {
-    margin: 0 0 30px;
-  }
-}
-.team-member {
-  text-align: center;
-  margin-bottom: 50px;
-}
-.team-member img {
-  margin: 0 auto;
-  border: 7px solid white;
-}
-.team-member h4 {
-  margin-top: 25px;
-  margin-bottom: 0;
-  text-transform: none;
-}
-.team-member p {
-  margin-top: 0;
 }
 footer {
   padding: 25px 0;
@@ -284,75 +206,6 @@ footer span.copyright {
 .btn.active,
 .btn:active:focus {
   outline: none;
-}
-.portfolio-modal .modal-dialog {
-  margin: 0;
-  height: 100%;
-  width: auto;
-}
-.portfolio-modal .modal-content {
-  border-radius: 0;
-  background-clip: border-box;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: none;
-  min-height: 100%;
-  padding: 100px 0;
-}
-.portfolio-modal .modal-content h2 {
-  margin-bottom: 15px;
-  font-size: 3em;
-}
-.portfolio-modal .modal-content p {
-  margin-bottom: 10px;
-}
-.portfolio-modal .modal-content p.item-intro {
-  margin: 20px 0 30px;
-  font-family: "Metric Light", Arial, sans-serif;
-  font-style: italic;
-  font-size: 16px;
-}
-.portfolio-modal .modal-content ul.list-inline {
-  margin-bottom: 30px;
-  margin-top: 0;
-}
-.portfolio-modal .modal-content img {
-  margin-bottom: 30px;
-}
-.portfolio-modal .close-modal {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  background-color: transparent;
-  top: 25px;
-  right: 25px;
-  cursor: pointer;
-}
-.portfolio-modal .close-modal:hover {
-  opacity: 0.3;
-}
-.portfolio-modal .close-modal .lr {
-  height: 75px;
-  width: 1px;
-  margin-left: 35px;
-  background-color: #222222;
-  transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  z-index: 1051;
-}
-.portfolio-modal .close-modal .lr .rl {
-  height: 75px;
-  width: 1px;
-  background-color: #222222;
-  transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  z-index: 1052;
-}
-.portfolio-modal .modal-backdrop {
-  opacity: 0;
-  display: none;
 }
 .img-responsive-logo{
   max-height: 50px;
@@ -378,34 +231,72 @@ h2.colordeco
   vertical-align: top;
 }
 
-.mdl-card-faqts{
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+.mdl-workshop{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   border-radius: 3px;
-  max-width: 300px;
-  margin: 5px;
-  padding: 22px;
+  margin: 15px;
   background-color: #FFFFFF;
 }
-.mdl-card-faqts h2{
-  font-family: "Metric Bold", Arial, sans-serif;
-  margin: 0;
-  font-size: 50px;
-  color: #000000;
-  height: 52px;
+.mdl-workshop .mdl-title{
+ background-color: #5f7a76;
+  width: 100%;
+  max-width:250px;
+  transition: max-width .3s linear;
+  display: inline-block;
+  color: #FFFFFF;
+  padding: 20px;
+  height: 100%;
+  min-height: 300px;
 }
-.mdl-card-faqts h2 span{
-  font-family: "Metric Light", Arial, sans-serif;
-  font-size: 30px;
-  margin-left: 10px;
-  vertical-align: middle;
-}
-.mdl-card-faqts p{
-  color: #757575;
-  margin: 0;
-  line-height: 24px;
+.mdl-workshop .mdl-title span{
   font-size: 20px;
 }
-
+.mdl-workshop .mdl-title p{
+  color: #FFFFFF;
+  margin: 0;
+  font-size: 28px;
+}
+.mdl-workshop .mdl-title h2{
+  margin: 15px 0;
+  font-size: 80px;
+}
+.mdl-workshop .mdl-title h2 span{
+  font-size: 40px;
+  font-family: "Metric Regular", Arial, sans-serif;
+}
+.mdl-workshop .mdl-contenido{
+  width: 100%;
+  max-width: calc(100% - 255px);
+  transition: max-width .3s linear;
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+}
+.mdl-workshop .mdl-contenido h2{
+  font-family: "Metric Bold", Arial, sans-serif;
+  margin: 0;
+  font-size: 20px;
+  color: #000000;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.mdl-workshop .mdl-contenido .mdl-height{
+  padding-left: 15px;
+  height: 130px;
+  margin: 0;
+}
+.mdl-workshop .mdl-contenido p.mdl-height{
+  padding: 0;
+  font-size: 16px;
+}
+.mdl-workshop .mdl-contenido ul li{
+  font-size: 16px;
+}
+.mdl-workshop .mdl-contenido button{
+  background-color: #5F7A76;
+  color: #FFFFFF;
+  text-transform: initial;
+}
 @media (min-width: 300px){
   section {
     padding: 60px 0;
@@ -449,5 +340,25 @@ h2.colordeco
   ul.navbar-nav {
     height: inherit;
     min-height: inherit;
+  }
+}
+
+@media (max-width: 768px){
+  .img-responsive-logo{
+    max-height: 35px;
+  }
+}
+@media (max-width: 1050px){
+  .mdl-workshop .mdl-title,
+  .mdl-workshop .mdl-contenido{
+    width: 100%;
+    max-width: 100%;
+  }
+  .mdl-workshop .mdl-title{
+    min-height: 200px;
+  }
+  .mdl-workshop .mdl-contenido .mdl-height{
+    height: inherit;
+    margin-bottom: 20px;
   }
 }
