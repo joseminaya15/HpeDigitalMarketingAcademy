@@ -244,14 +244,15 @@ h2.colordeco
   padding: 0;
   min-height: 200px;
   float: right;
+  max-width: 300px;
 }
 .mdl-workshop.discover .mdl-title img{
   width: 100%;
 }
 .mdl-workshop.discover .mdl-contenido{
   float: left;
-  max-width: calc(100% - 250px);
-  min-height: 231px;
+  max-width: calc(100% - 300px);
+  min-height: 182px;
   background-color: #614767;
 }
 .mdl-workshop.discover .mdl-contenido p,
@@ -388,12 +389,7 @@ h2.colordeco
     height: inherit;
     margin-bottom: 20px;
   }
-  .mdl-workshop.discover .mdl-title{
-    max-width: 200px;
-  }
   .mdl-workshop.discover .mdl-contenido{
-    max-width: calc(100% - 200px);
-    min-height: 185px;
     padding: 10px 20px;
   }
   .mdl-workshop.discover .mdl-contenido h2{
@@ -411,22 +407,21 @@ h2.colordeco
     max-height: 35px;
   }
 }
-@media (max-width: 420px){
+@media (max-width: 560px){
   .mdl-workshop.discover{
-    max-width: 200px;
-    margin: 50px auto;
+    max-width: 100%;
   }
   .mdl-workshop.discover .mdl-contenido,
   .mdl-workshop.discover .mdl-title{
-    max-width: 200px;
+    max-width: 100%;
     float: none;
   }
   .mdl-workshop.discover .mdl-title{
     text-align: center;
-    min-height: 185px;
+    min-height: 100%;
   }
   .mdl-workshop.discover .mdl-title img{
-    max-width: 200px;
+    max-width: 100%;
   }
   .mdl-workshop.discover .mdl-contenido{
     padding: 20px;
