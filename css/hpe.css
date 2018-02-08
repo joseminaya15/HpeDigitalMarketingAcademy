@@ -171,6 +171,7 @@ header .intro-text .intro-heading {
 }
 section h2.section-heading {
   font-size: 40px;
+  margin: 40px 0;
 }
 section .section-subheading p{
   font-size: 18px;
@@ -350,6 +351,29 @@ h2.colordeco
 .mdl-workshop .mdl-contenido a{
   margin-left: 10px;
 }
+/*TABLE*/
+.table-responsive{
+  border: none;
+}
+.table>thead>tr>th{
+  font-family: "Metric SemiBold", Arial, sans-serif;
+  font-size: 18px;
+}
+.table>tbody>tr>td{
+  vertical-align: middle;
+  font-family: "Metric Regular", Arial, sans-serif;
+  font-size: 18px;
+  color: #000000;
+}
+.table>tbody>tr>td>span{
+  border: 1px solid #01A982;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 28px;
+  text-align: center;
+}
 /*MODAL*/
 .modal-dialog{
   width: 100%;
@@ -414,9 +438,23 @@ h2.colordeco
   margin-right: 5px;
   font-size: 16px;
 }
+/*BARRA SCROLL*/
+::-webkit-scrollbar {
+  width: 4px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 10px;
+}
+
 @media (min-width: 300px){
   section {
-    padding: 60px 0;
+    padding: 20px 0 50px 0;
   }
   .navbar-custom .navbar-collapse,
   ul.navbar-nav {
@@ -432,7 +470,7 @@ h2.colordeco
 }
 @media (min-width: 768px){
   section {
-    padding: 100px 0;
+    padding: 60px 0 100px 0;
   }
   .navbar-nav>li>a {
       padding-top: 15px;
