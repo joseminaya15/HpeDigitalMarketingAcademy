@@ -225,13 +225,27 @@ h2.colordeco
 	padding: 0px;
 	margin: 0px;
 }
-
-
+/*TEAM*/
+.team-member{
+  margin-bottom: 50px;
+}
+.team-member img {
+    margin: 0 auto;
+    border: 7px solid white;
+    cursor: pointer;
+}
+.team-member h4{
+  font-size: 20px;
+  margin: 15px 0 0 0;
+  line-height: 20px;
+}
+.team-member p{
+  font-size: 18px;
+}
 .mdl-cards{
   display: inline-block;
   vertical-align: top;
 }
-
 .mdl-workshop{
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   border-radius: 3px;
@@ -336,6 +350,70 @@ h2.colordeco
 .mdl-workshop .mdl-contenido a{
   margin-left: 10px;
 }
+/*MODAL*/
+.modal-dialog{
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+}
+.modal .modal-content{
+  border-radius: 0;
+}
+.modal .mdl-card{
+  width: 100%;
+  max-width: 750px;
+  margin: auto;
+  margin-top: 60px;
+}
+.modal .mdl-card .mdl-card__title img{
+  max-width: 400px;
+  margin: auto;
+  width: 100%;
+}
+.modal .mdl-card .mdl-card__supporting-text{
+  width: 100%;
+}
+.modal .mdl-card .mdl-card__supporting-text h2{
+  font-size: 24px;
+  margin: 10px 0;
+  text-align: center;
+  color: #000000;
+  line-height: 24px;
+}
+.modal .mdl-card .mdl-card__supporting-text span{
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+}
+.modal .mdl-card .mdl-card__supporting-text label{
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+  margin: 10px 0;
+  color: #000000;
+}
+.modal .mdl-card .mdl-card__supporting-text p{
+  font-size: 18px;
+  color: #000000;
+  line-height: 24px;
+}
+.modal .mdl-card .mdl-card__actions{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.modal .mdl-card .mdl-card__actions button{
+  background-color: #01A982;
+  color: #FFFFFF;
+  text-transform: initial;
+  font-family: "Metric SemiBold", Arial, sans-serif;
+  font-size: 18px;
+}
+.modal .mdl-card .mdl-card__actions button i{
+  margin-right: 5px;
+  font-size: 16px;
+}
 @media (min-width: 300px){
   section {
     padding: 60px 0;
@@ -430,6 +508,9 @@ h2.colordeco
   }
   .mdl-workshop.discover .mdl-contenido{
     padding: 20px;
+  }
+  #expositor .col-xs-6{
+    width: 100%;
   }
 }
 @media (max-width: 420px){
