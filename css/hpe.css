@@ -333,6 +333,9 @@ h2.colordeco
   color: #FFFFFF;
   text-transform: initial;
 }
+.mdl-workshop .mdl-contenido a{
+  margin-left: 10px;
+}
 @media (min-width: 300px){
   section {
     padding: 60px 0;
@@ -429,6 +432,12 @@ h2.colordeco
     padding: 20px;
   }
 }
-.m-l-10 {
-  margin-left: 10px;
+@media (max-width: 420px){
+  .mdl-workshop .mdl-contenido button{
+    width: 100%;
+    margin: 5px 0;
+  }
+  .mdl-workshop .mdl-contenido a{
+    margin: 0;
+  }
 }
