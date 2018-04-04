@@ -438,6 +438,9 @@ h2.colordeco
   margin-right: 5px;
   font-size: 16px;
 }
+.col-xs-12.p-0{
+  padding: 0;
+}
 /*BARRA SCROLL*/
 ::-webkit-scrollbar {
   width: 4px;
