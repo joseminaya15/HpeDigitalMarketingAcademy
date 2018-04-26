@@ -441,6 +441,15 @@ h2.colordeco
 .col-xs-12.p-0{
   padding: 0;
 }
+.fecha-nueva{
+  background-color: #FFFFFF;
+  color: #5F7A76;
+  font-weight: bold;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  display: inline-block;
+  border-radius: 3px;
+}
 /*BARRA SCROLL*/
 ::-webkit-scrollbar {
   width: 4px;
@@ -454,7 +463,6 @@ h2.colordeco
   background-color: #aaa;
   border-radius: 10px;
 }
-
 @media (min-width: 300px){
   section {
     padding: 20px 0 50px 0;
