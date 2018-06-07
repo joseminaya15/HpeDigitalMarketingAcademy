@@ -573,7 +573,7 @@ h2.colordeco
     width: 100%;
   }
 }
-@media (max-width: 420px){
+@media (max-width: 480px){
   .mdl-workshop .mdl-contenido button{
     width: 100%;
     margin: 5px 0;
